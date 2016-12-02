@@ -15,13 +15,13 @@
 		C9DC92A51DF11DDC00792A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DC92A31DF11DDC00792A59 /* LaunchScreen.storyboard */; };
 		C9DC92B01DF11DDC00792A59 /* QTChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92AF1DF11DDC00792A59 /* QTChartTests.m */; };
 		C9DC92BB1DF11DDC00792A59 /* QTChartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92BA1DF11DDC00792A59 /* QTChartUITests.m */; };
-		C9DC92CB1DF1227F00792A59 /* QTChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92CA1DF1227F00792A59 /* QTChart.m */; };
-		C9DC92CE1DF1258700792A59 /* QTChartPaintbrush.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92CD1DF1258700792A59 /* QTChartPaintbrush.m */; };
-		C9DC92D31DF1292900792A59 /* QTKChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92D21DF1292900792A59 /* QTKChart.m */; };
-		C9DC92D61DF12DF600792A59 /* QTKChartPaintbrush.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92D51DF12DF600792A59 /* QTKChartPaintbrush.m */; };
-		C9DC92D91DF1568300792A59 /* QTKChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92D81DF1568300792A59 /* QTKChartModel.m */; };
-		C9DC92DD1DF15D3500792A59 /* KChartData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DC92DC1DF15D3500792A59 /* KChartData.plist */; };
-		C9DC92E01DF15DB700792A59 /* QTChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92DF1DF15DB700792A59 /* QTChartData.m */; };
+		C9DC92E91DF1849000792A59 /* QTKChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92E31DF1849000792A59 /* QTKChart.m */; };
+		C9DC92EA1DF1849000792A59 /* QTKChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92E61DF1849000792A59 /* QTKChartModel.m */; };
+		C9DC92EB1DF1849000792A59 /* QTKChartPaintbrush.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92E81DF1849000792A59 /* QTKChartPaintbrush.m */; };
+		C9DC92F51DF184D600792A59 /* QTChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92EF1DF184D600792A59 /* QTChart.m */; };
+		C9DC92F61DF184D600792A59 /* QTChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92F11DF184D600792A59 /* QTChartData.m */; };
+		C9DC92F71DF184D600792A59 /* QTChartPaintbrush.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92F41DF184D600792A59 /* QTChartPaintbrush.m */; };
+		C9DC92F91DF184E500792A59 /* KChartData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DC92F81DF184E500792A59 /* KChartData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,21 +58,21 @@
 		C9DC92B61DF11DDC00792A59 /* QTChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DC92BA1DF11DDC00792A59 /* QTChartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTChartUITests.m; sourceTree = "<group>"; };
 		C9DC92BC1DF11DDC00792A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9DC92C91DF1227F00792A59 /* QTChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChart.h; sourceTree = "<group>"; };
-		C9DC92CA1DF1227F00792A59 /* QTChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChart.m; sourceTree = "<group>"; };
-		C9DC92CC1DF1258700792A59 /* QTChartPaintbrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChartPaintbrush.h; sourceTree = "<group>"; };
-		C9DC92CD1DF1258700792A59 /* QTChartPaintbrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChartPaintbrush.m; sourceTree = "<group>"; };
-		C9DC92CF1DF125FA00792A59 /* QTChartDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTChartDataProtocol.h; sourceTree = "<group>"; };
-		C9DC92D11DF1292900792A59 /* QTKChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChart.h; sourceTree = "<group>"; };
-		C9DC92D21DF1292900792A59 /* QTKChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChart.m; sourceTree = "<group>"; };
-		C9DC92D41DF12DF600792A59 /* QTKChartPaintbrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartPaintbrush.h; sourceTree = "<group>"; };
-		C9DC92D51DF12DF600792A59 /* QTKChartPaintbrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChartPaintbrush.m; sourceTree = "<group>"; };
-		C9DC92D71DF1568300792A59 /* QTKChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartModel.h; sourceTree = "<group>"; };
-		C9DC92D81DF1568300792A59 /* QTKChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChartModel.m; sourceTree = "<group>"; };
-		C9DC92DA1DF1578E00792A59 /* QTKChartDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTKChartDataProtocol.h; sourceTree = "<group>"; };
-		C9DC92DC1DF15D3500792A59 /* KChartData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KChartData.plist; sourceTree = "<group>"; };
-		C9DC92DE1DF15DB700792A59 /* QTChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChartData.h; sourceTree = "<group>"; };
-		C9DC92DF1DF15DB700792A59 /* QTChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChartData.m; sourceTree = "<group>"; };
+		C9DC92E21DF1849000792A59 /* QTKChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChart.h; sourceTree = "<group>"; };
+		C9DC92E31DF1849000792A59 /* QTKChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChart.m; sourceTree = "<group>"; };
+		C9DC92E41DF1849000792A59 /* QTKChartDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartDataProtocol.h; sourceTree = "<group>"; };
+		C9DC92E51DF1849000792A59 /* QTKChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartModel.h; sourceTree = "<group>"; };
+		C9DC92E61DF1849000792A59 /* QTKChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChartModel.m; sourceTree = "<group>"; };
+		C9DC92E71DF1849000792A59 /* QTKChartPaintbrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartPaintbrush.h; sourceTree = "<group>"; };
+		C9DC92E81DF1849000792A59 /* QTKChartPaintbrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChartPaintbrush.m; sourceTree = "<group>"; };
+		C9DC92EE1DF184D600792A59 /* QTChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChart.h; sourceTree = "<group>"; };
+		C9DC92EF1DF184D600792A59 /* QTChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChart.m; sourceTree = "<group>"; };
+		C9DC92F01DF184D600792A59 /* QTChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChartData.h; sourceTree = "<group>"; };
+		C9DC92F11DF184D600792A59 /* QTChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChartData.m; sourceTree = "<group>"; };
+		C9DC92F21DF184D600792A59 /* QTChartDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChartDataProtocol.h; sourceTree = "<group>"; };
+		C9DC92F31DF184D600792A59 /* QTChartPaintbrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChartPaintbrush.h; sourceTree = "<group>"; };
+		C9DC92F41DF184D600792A59 /* QTChartPaintbrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChartPaintbrush.m; sourceTree = "<group>"; };
+		C9DC92F81DF184E500792A59 /* KChartData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KChartData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,31 +166,39 @@
 		C9DC92C81DF11E5400792A59 /* QTChart */ = {
 			isa = PBXGroup;
 			children = (
-				C9DC92D01DF128DF00792A59 /* QTChartLine */,
-				C9DC92C91DF1227F00792A59 /* QTChart.h */,
-				C9DC92CA1DF1227F00792A59 /* QTChart.m */,
-				C9DC92CC1DF1258700792A59 /* QTChartPaintbrush.h */,
-				C9DC92CD1DF1258700792A59 /* QTChartPaintbrush.m */,
-				C9DC92DE1DF15DB700792A59 /* QTChartData.h */,
-				C9DC92DF1DF15DB700792A59 /* QTChartData.m */,
-				C9DC92CF1DF125FA00792A59 /* QTChartDataProtocol.h */,
+				C9DC92ED1DF184D600792A59 /* QTChartSuper */,
+				C9DC92E11DF1843900792A59 /* QTChartLine */,
 			);
 			name = QTChart;
 			sourceTree = "<group>";
 		};
-		C9DC92D01DF128DF00792A59 /* QTChartLine */ = {
+		C9DC92E11DF1843900792A59 /* QTChartLine */ = {
 			isa = PBXGroup;
 			children = (
-				C9DC92D11DF1292900792A59 /* QTKChart.h */,
-				C9DC92D21DF1292900792A59 /* QTKChart.m */,
-				C9DC92D41DF12DF600792A59 /* QTKChartPaintbrush.h */,
-				C9DC92D51DF12DF600792A59 /* QTKChartPaintbrush.m */,
-				C9DC92D71DF1568300792A59 /* QTKChartModel.h */,
-				C9DC92D81DF1568300792A59 /* QTKChartModel.m */,
-				C9DC92DA1DF1578E00792A59 /* QTKChartDataProtocol.h */,
-				C9DC92DC1DF15D3500792A59 /* KChartData.plist */,
+				C9DC92E21DF1849000792A59 /* QTKChart.h */,
+				C9DC92E31DF1849000792A59 /* QTKChart.m */,
+				C9DC92E41DF1849000792A59 /* QTKChartDataProtocol.h */,
+				C9DC92E51DF1849000792A59 /* QTKChartModel.h */,
+				C9DC92E61DF1849000792A59 /* QTKChartModel.m */,
+				C9DC92E71DF1849000792A59 /* QTKChartPaintbrush.h */,
+				C9DC92E81DF1849000792A59 /* QTKChartPaintbrush.m */,
+				C9DC92F81DF184E500792A59 /* KChartData.plist */,
 			);
-			name = QTChartLine;
+			path = QTChartLine;
+			sourceTree = "<group>";
+		};
+		C9DC92ED1DF184D600792A59 /* QTChartSuper */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC92EE1DF184D600792A59 /* QTChart.h */,
+				C9DC92EF1DF184D600792A59 /* QTChart.m */,
+				C9DC92F01DF184D600792A59 /* QTChartData.h */,
+				C9DC92F11DF184D600792A59 /* QTChartData.m */,
+				C9DC92F21DF184D600792A59 /* QTChartDataProtocol.h */,
+				C9DC92F31DF184D600792A59 /* QTChartPaintbrush.h */,
+				C9DC92F41DF184D600792A59 /* QTChartPaintbrush.m */,
+			);
+			path = QTChartSuper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +307,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9DC92DD1DF15D3500792A59 /* KChartData.plist in Resources */,
 				C9DC92A51DF11DDC00792A59 /* LaunchScreen.storyboard in Resources */,
+				C9DC92F91DF184E500792A59 /* KChartData.plist in Resources */,
 				C9DC92A21DF11DDC00792A59 /* Assets.xcassets in Resources */,
 				C9DC92A01DF11DDC00792A59 /* Main.storyboard in Resources */,
 			);
@@ -327,15 +335,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9DC92D61DF12DF600792A59 /* QTKChartPaintbrush.m in Sources */,
-				C9DC92E01DF15DB700792A59 /* QTChartData.m in Sources */,
-				C9DC92CE1DF1258700792A59 /* QTChartPaintbrush.m in Sources */,
 				C9DC929D1DF11DDC00792A59 /* ViewController.m in Sources */,
+				C9DC92F61DF184D600792A59 /* QTChartData.m in Sources */,
 				C9DC929A1DF11DDC00792A59 /* AppDelegate.m in Sources */,
-				C9DC92D31DF1292900792A59 /* QTKChart.m in Sources */,
-				C9DC92D91DF1568300792A59 /* QTKChartModel.m in Sources */,
 				C9DC92971DF11DDC00792A59 /* main.m in Sources */,
-				C9DC92CB1DF1227F00792A59 /* QTChart.m in Sources */,
+				C9DC92EA1DF1849000792A59 /* QTKChartModel.m in Sources */,
+				C9DC92E91DF1849000792A59 /* QTKChart.m in Sources */,
+				C9DC92EB1DF1849000792A59 /* QTKChartPaintbrush.m in Sources */,
+				C9DC92F51DF184D600792A59 /* QTChart.m in Sources */,
+				C9DC92F71DF184D600792A59 /* QTChartPaintbrush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +577,7 @@
 				C9DC92C11DF11DDC00792A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DC92C21DF11DDC00792A59 /* Build configuration list for PBXNativeTarget "QTChartTests" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +586,7 @@
 				C9DC92C41DF11DDC00792A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DC92C51DF11DDC00792A59 /* Build configuration list for PBXNativeTarget "QTChartUITests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +595,7 @@
 				C9DC92C71DF11DDC00792A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

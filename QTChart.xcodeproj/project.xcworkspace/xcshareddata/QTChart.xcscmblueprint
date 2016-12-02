@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3D46187C833754D771EA3D4769BBAB5DE6211F56",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9A1686CEE09D6AF355741E207F58904E9F2E1CF8" : 9223372036854775807,
+    "3D46187C833754D771EA3D4769BBAB5DE6211F56" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C2CFF909-1D6F-490B-B5F2-BE186DB362C2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9A1686CEE09D6AF355741E207F58904E9F2E1CF8" : "",
+    "3D46187C833754D771EA3D4769BBAB5DE6211F56" : "QTChart\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "QTChart",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "QTChart.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lq9869\/QTChart.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3D46187C833754D771EA3D4769BBAB5DE6211F56"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LuxlightQ\/QTHoledView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A1686CEE09D6AF355741E207F58904E9F2E1CF8"
+    }
+  ]
+}

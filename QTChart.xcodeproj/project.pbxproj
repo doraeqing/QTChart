@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9DC92971DF11DDC00792A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92961DF11DDC00792A59 /* main.m */; };
+		C9DC929A1DF11DDC00792A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92991DF11DDC00792A59 /* AppDelegate.m */; };
+		C9DC929D1DF11DDC00792A59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC929C1DF11DDC00792A59 /* ViewController.m */; };
+		C9DC92A01DF11DDC00792A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DC929E1DF11DDC00792A59 /* Main.storyboard */; };
+		C9DC92A21DF11DDC00792A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9DC92A11DF11DDC00792A59 /* Assets.xcassets */; };
+		C9DC92A51DF11DDC00792A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DC92A31DF11DDC00792A59 /* LaunchScreen.storyboard */; };
+		C9DC92B01DF11DDC00792A59 /* QTChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92AF1DF11DDC00792A59 /* QTChartTests.m */; };
+		C9DC92BB1DF11DDC00792A59 /* QTChartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92BA1DF11DDC00792A59 /* QTChartUITests.m */; };
+		C9DC92CB1DF1227F00792A59 /* QTChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92CA1DF1227F00792A59 /* QTChart.m */; };
+		C9DC92CE1DF1258700792A59 /* QTChartPaintbrush.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92CD1DF1258700792A59 /* QTChartPaintbrush.m */; };
+		C9DC92D31DF1292900792A59 /* QTKChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92D21DF1292900792A59 /* QTKChart.m */; };
+		C9DC92D61DF12DF600792A59 /* QTKChartPaintbrush.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92D51DF12DF600792A59 /* QTKChartPaintbrush.m */; };
+		C9DC92D91DF1568300792A59 /* QTKChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92D81DF1568300792A59 /* QTKChartModel.m */; };
+		C9DC92DD1DF15D3500792A59 /* KChartData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DC92DC1DF15D3500792A59 /* KChartData.plist */; };
+		C9DC92E01DF15DB700792A59 /* QTChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92DF1DF15DB700792A59 /* QTChartData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9DC92AC1DF11DDC00792A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9DC928A1DF11DDC00792A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9DC92911DF11DDC00792A59;
+			remoteInfo = QTChart;
+		};
+		C9DC92B71DF11DDC00792A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9DC928A1DF11DDC00792A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9DC92911DF11DDC00792A59;
+			remoteInfo = QTChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9DC92921DF11DDC00792A59 /* QTChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QTChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DC92961DF11DDC00792A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9DC92981DF11DDC00792A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9DC92991DF11DDC00792A59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9DC929B1DF11DDC00792A59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C9DC929C1DF11DDC00792A59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C9DC929F1DF11DDC00792A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9DC92A11DF11DDC00792A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9DC92A41DF11DDC00792A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9DC92A61DF11DDC00792A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9DC92AB1DF11DDC00792A59 /* QTChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DC92AF1DF11DDC00792A59 /* QTChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTChartTests.m; sourceTree = "<group>"; };
+		C9DC92B11DF11DDC00792A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9DC92B61DF11DDC00792A59 /* QTChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DC92BA1DF11DDC00792A59 /* QTChartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTChartUITests.m; sourceTree = "<group>"; };
+		C9DC92BC1DF11DDC00792A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9DC92C91DF1227F00792A59 /* QTChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChart.h; sourceTree = "<group>"; };
+		C9DC92CA1DF1227F00792A59 /* QTChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChart.m; sourceTree = "<group>"; };
+		C9DC92CC1DF1258700792A59 /* QTChartPaintbrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChartPaintbrush.h; sourceTree = "<group>"; };
+		C9DC92CD1DF1258700792A59 /* QTChartPaintbrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChartPaintbrush.m; sourceTree = "<group>"; };
+		C9DC92CF1DF125FA00792A59 /* QTChartDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTChartDataProtocol.h; sourceTree = "<group>"; };
+		C9DC92D11DF1292900792A59 /* QTKChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChart.h; sourceTree = "<group>"; };
+		C9DC92D21DF1292900792A59 /* QTKChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChart.m; sourceTree = "<group>"; };
+		C9DC92D41DF12DF600792A59 /* QTKChartPaintbrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartPaintbrush.h; sourceTree = "<group>"; };
+		C9DC92D51DF12DF600792A59 /* QTKChartPaintbrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChartPaintbrush.m; sourceTree = "<group>"; };
+		C9DC92D71DF1568300792A59 /* QTKChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartModel.h; sourceTree = "<group>"; };
+		C9DC92D81DF1568300792A59 /* QTKChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChartModel.m; sourceTree = "<group>"; };
+		C9DC92DA1DF1578E00792A59 /* QTKChartDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTKChartDataProtocol.h; sourceTree = "<group>"; };
+		C9DC92DC1DF15D3500792A59 /* KChartData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KChartData.plist; sourceTree = "<group>"; };
+		C9DC92DE1DF15DB700792A59 /* QTChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChartData.h; sourceTree = "<group>"; };
+		C9DC92DF1DF15DB700792A59 /* QTChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChartData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9DC928F1DF11DDC00792A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DC92A81DF11DDC00792A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DC92B31DF11DDC00792A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9DC92891DF11DDC00792A59 = {
+			isa = PBXGroup;
+			children = (
+				C9DC92941DF11DDC00792A59 /* QTChart */,
+				C9DC92AE1DF11DDC00792A59 /* QTChartTests */,
+				C9DC92B91DF11DDC00792A59 /* QTChartUITests */,
+				C9DC92931DF11DDC00792A59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9DC92931DF11DDC00792A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC92921DF11DDC00792A59 /* QTChart.app */,
+				C9DC92AB1DF11DDC00792A59 /* QTChartTests.xctest */,
+				C9DC92B61DF11DDC00792A59 /* QTChartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9DC92941DF11DDC00792A59 /* QTChart */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC92C81DF11E5400792A59 /* QTChart */,
+				C9DC92981DF11DDC00792A59 /* AppDelegate.h */,
+				C9DC92991DF11DDC00792A59 /* AppDelegate.m */,
+				C9DC929B1DF11DDC00792A59 /* ViewController.h */,
+				C9DC929C1DF11DDC00792A59 /* ViewController.m */,
+				C9DC929E1DF11DDC00792A59 /* Main.storyboard */,
+				C9DC92A11DF11DDC00792A59 /* Assets.xcassets */,
+				C9DC92A31DF11DDC00792A59 /* LaunchScreen.storyboard */,
+				C9DC92A61DF11DDC00792A59 /* Info.plist */,
+				C9DC92951DF11DDC00792A59 /* Supporting Files */,
+			);
+			path = QTChart;
+			sourceTree = "<group>";
+		};
+		C9DC92951DF11DDC00792A59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC92961DF11DDC00792A59 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9DC92AE1DF11DDC00792A59 /* QTChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC92AF1DF11DDC00792A59 /* QTChartTests.m */,
+				C9DC92B11DF11DDC00792A59 /* Info.plist */,
+			);
+			path = QTChartTests;
+			sourceTree = "<group>";
+		};
+		C9DC92B91DF11DDC00792A59 /* QTChartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC92BA1DF11DDC00792A59 /* QTChartUITests.m */,
+				C9DC92BC1DF11DDC00792A59 /* Info.plist */,
+			);
+			path = QTChartUITests;
+			sourceTree = "<group>";
+		};
+		C9DC92C81DF11E5400792A59 /* QTChart */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC92D01DF128DF00792A59 /* QTChartLine */,
+				C9DC92C91DF1227F00792A59 /* QTChart.h */,
+				C9DC92CA1DF1227F00792A59 /* QTChart.m */,
+				C9DC92CC1DF1258700792A59 /* QTChartPaintbrush.h */,
+				C9DC92CD1DF1258700792A59 /* QTChartPaintbrush.m */,
+				C9DC92DE1DF15DB700792A59 /* QTChartData.h */,
+				C9DC92DF1DF15DB700792A59 /* QTChartData.m */,
+				C9DC92CF1DF125FA00792A59 /* QTChartDataProtocol.h */,
+			);
+			name = QTChart;
+			sourceTree = "<group>";
+		};
+		C9DC92D01DF128DF00792A59 /* QTChartLine */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC92D11DF1292900792A59 /* QTKChart.h */,
+				C9DC92D21DF1292900792A59 /* QTKChart.m */,
+				C9DC92D41DF12DF600792A59 /* QTKChartPaintbrush.h */,
+				C9DC92D51DF12DF600792A59 /* QTKChartPaintbrush.m */,
+				C9DC92D71DF1568300792A59 /* QTKChartModel.h */,
+				C9DC92D81DF1568300792A59 /* QTKChartModel.m */,
+				C9DC92DA1DF1578E00792A59 /* QTKChartDataProtocol.h */,
+				C9DC92DC1DF15D3500792A59 /* KChartData.plist */,
+			);
+			name = QTChartLine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9DC92911DF11DDC00792A59 /* QTChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DC92BF1DF11DDC00792A59 /* Build configuration list for PBXNativeTarget "QTChart" */;
+			buildPhases = (
+				C9DC928E1DF11DDC00792A59 /* Sources */,
+				C9DC928F1DF11DDC00792A59 /* Frameworks */,
+				C9DC92901DF11DDC00792A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QTChart;
+			productName = QTChart;
+			productReference = C9DC92921DF11DDC00792A59 /* QTChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9DC92AA1DF11DDC00792A59 /* QTChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DC92C21DF11DDC00792A59 /* Build configuration list for PBXNativeTarget "QTChartTests" */;
+			buildPhases = (
+				C9DC92A71DF11DDC00792A59 /* Sources */,
+				C9DC92A81DF11DDC00792A59 /* Frameworks */,
+				C9DC92A91DF11DDC00792A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9DC92AD1DF11DDC00792A59 /* PBXTargetDependency */,
+			);
+			name = QTChartTests;
+			productName = QTChartTests;
+			productReference = C9DC92AB1DF11DDC00792A59 /* QTChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9DC92B51DF11DDC00792A59 /* QTChartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DC92C51DF11DDC00792A59 /* Build configuration list for PBXNativeTarget "QTChartUITests" */;
+			buildPhases = (
+				C9DC92B21DF11DDC00792A59 /* Sources */,
+				C9DC92B31DF11DDC00792A59 /* Frameworks */,
+				C9DC92B41DF11DDC00792A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9DC92B81DF11DDC00792A59 /* PBXTargetDependency */,
+			);
+			name = QTChartUITests;
+			productName = QTChartUITests;
+			productReference = C9DC92B61DF11DDC00792A59 /* QTChartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9DC928A1DF11DDC00792A59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = lq9869;
+				TargetAttributes = {
+					C9DC92911DF11DDC00792A59 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					C9DC92AA1DF11DDC00792A59 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C9DC92911DF11DDC00792A59;
+					};
+					C9DC92B51DF11DDC00792A59 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C9DC92911DF11DDC00792A59;
+					};
+				};
+			};
+			buildConfigurationList = C9DC928D1DF11DDC00792A59 /* Build configuration list for PBXProject "QTChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9DC92891DF11DDC00792A59;
+			productRefGroup = C9DC92931DF11DDC00792A59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9DC92911DF11DDC00792A59 /* QTChart */,
+				C9DC92AA1DF11DDC00792A59 /* QTChartTests */,
+				C9DC92B51DF11DDC00792A59 /* QTChartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9DC92901DF11DDC00792A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DC92DD1DF15D3500792A59 /* KChartData.plist in Resources */,
+				C9DC92A51DF11DDC00792A59 /* LaunchScreen.storyboard in Resources */,
+				C9DC92A21DF11DDC00792A59 /* Assets.xcassets in Resources */,
+				C9DC92A01DF11DDC00792A59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DC92A91DF11DDC00792A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DC92B41DF11DDC00792A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9DC928E1DF11DDC00792A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DC92D61DF12DF600792A59 /* QTKChartPaintbrush.m in Sources */,
+				C9DC92E01DF15DB700792A59 /* QTChartData.m in Sources */,
+				C9DC92CE1DF1258700792A59 /* QTChartPaintbrush.m in Sources */,
+				C9DC929D1DF11DDC00792A59 /* ViewController.m in Sources */,
+				C9DC929A1DF11DDC00792A59 /* AppDelegate.m in Sources */,
+				C9DC92D31DF1292900792A59 /* QTKChart.m in Sources */,
+				C9DC92D91DF1568300792A59 /* QTKChartModel.m in Sources */,
+				C9DC92971DF11DDC00792A59 /* main.m in Sources */,
+				C9DC92CB1DF1227F00792A59 /* QTChart.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DC92A71DF11DDC00792A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DC92B01DF11DDC00792A59 /* QTChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DC92B21DF11DDC00792A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DC92BB1DF11DDC00792A59 /* QTChartUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9DC92AD1DF11DDC00792A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9DC92911DF11DDC00792A59 /* QTChart */;
+			targetProxy = C9DC92AC1DF11DDC00792A59 /* PBXContainerItemProxy */;
+		};
+		C9DC92B81DF11DDC00792A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9DC92911DF11DDC00792A59 /* QTChart */;
+			targetProxy = C9DC92B71DF11DDC00792A59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9DC929E1DF11DDC00792A59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DC929F1DF11DDC00792A59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9DC92A31DF11DDC00792A59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DC92A41DF11DDC00792A59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9DC92BD1DF11DDC00792A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9DC92BE1DF11DDC00792A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9DC92C01DF11DDC00792A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QTChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lq9869.chart.QTChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C9DC92C11DF11DDC00792A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QTChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lq9869.chart.QTChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C9DC92C31DF11DDC00792A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QTChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lq9869.chart.QTChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QTChart.app/QTChart";
+			};
+			name = Debug;
+		};
+		C9DC92C41DF11DDC00792A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QTChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lq9869.chart.QTChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QTChart.app/QTChart";
+			};
+			name = Release;
+		};
+		C9DC92C61DF11DDC00792A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QTChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lq9869.chart.QTChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QTChart;
+			};
+			name = Debug;
+		};
+		C9DC92C71DF11DDC00792A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QTChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lq9869.chart.QTChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QTChart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9DC928D1DF11DDC00792A59 /* Build configuration list for PBXProject "QTChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DC92BD1DF11DDC00792A59 /* Debug */,
+				C9DC92BE1DF11DDC00792A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9DC92BF1DF11DDC00792A59 /* Build configuration list for PBXNativeTarget "QTChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DC92C01DF11DDC00792A59 /* Debug */,
+				C9DC92C11DF11DDC00792A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9DC92C21DF11DDC00792A59 /* Build configuration list for PBXNativeTarget "QTChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DC92C31DF11DDC00792A59 /* Debug */,
+				C9DC92C41DF11DDC00792A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9DC92C51DF11DDC00792A59 /* Build configuration list for PBXNativeTarget "QTChartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DC92C61DF11DDC00792A59 /* Debug */,
+				C9DC92C71DF11DDC00792A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9DC928A1DF11DDC00792A59 /* Project object */;
+}

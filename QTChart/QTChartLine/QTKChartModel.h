@@ -40,6 +40,6 @@
 @property (nonatomic, strong) NSString *KDJ_D;
 @property (nonatomic, strong) NSString *KDJ_J;
 
-- (NSArray <QTKChartModel *> *)kLineDatas;
++ (NSArray <QTKChartModel *> *)kLineDatas;
 
 @end

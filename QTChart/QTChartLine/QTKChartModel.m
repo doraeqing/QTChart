@@ -22,7 +22,7 @@
     return self;
 }
 
-- (NSArray<QTKChartModel *> *)kLineDatas {
++ (NSArray<QTKChartModel *> *)kLineDatas {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"KChartData" ofType:@"plist"];
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
     NSMutableArray *arrModels = [NSMutableArray array];

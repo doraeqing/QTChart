@@ -8,9 +8,10 @@
 
 #import "ViewController.h"
 #import "QTKChart.h"
+#import "QTKChartModel.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) QTKChart *KChart;
 @end
 
 @implementation ViewController
@@ -18,8 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    QTKChart *kchart = [[QTKChart alloc] initWithFrame:CGRectMake(20, 20, self.view.frame.size.width-40, 300)];
-    [self.view addSubview:kchart];
+    self.KChart = [[QTKChart alloc] initWithFrame:CGRectMake(20, 20, self.view.frame.size.width-40, 300)];
+    NSArray *array = [QTKChartModel kLineDatas];
+    self.KChart.dataSource = array;
+    [self.view addSubview:self.KChart];
 }
 
 
@@ -28,5 +31,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)disp:(id)sender {
+    [self.KChart setNeedsDisplay];
+}
 
 @end

@@ -14,7 +14,6 @@
 {
     double _maxPrice, _minPirce, _yRatio;
     CGRect _topArea;
-    NSInteger _range;
 }
 
 @property (nonatomic, strong) QTKChart *KChart;
@@ -27,19 +26,20 @@
 - (void)paintInChart:(__kindof QTChart *)chart {
     self.KChart = chart;
     self.dataSource = chart.dataSource;
-    _maxPrice = self.dataSource.firstObject.maxPrice.doubleValue;
-    _minPirce = self.dataSource.firstObject.minPrice.doubleValue;
+    _maxPrice = [[self.dataSource[self.KChart.rangeFrom] maxPrice] doubleValue];
+    _minPirce = [[self.dataSource[self.KChart.rangeFrom] minPrice] doubleValue];
     
-    [self.dataSource enumerateObjectsUsingBlock:^(QTKChartModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        _maxPrice = MAX(_maxPrice, obj.maxPrice.doubleValue);
-        _minPirce = MIN(_minPirce, obj.minPrice.doubleValue);
-    }];
+    for (NSInteger i = self.KChart.rangeFrom; i < self.KChart.rangeTo; ++i) {
+        QTKChartModel *model = self.dataSource[i];
+        _maxPrice = MAX(_maxPrice, model.maxPrice.doubleValue);
+        _minPirce = MIN(_minPirce, model.minPrice.doubleValue);
+    }
     _topArea = CGRectMake(0,
                           0,
                           CGRectGetWidth(self.KChart.frame),
                           CGRectGetHeight(self.KChart.frame));
     _yRatio = (_maxPrice - _minPirce) / CGRectGetHeight(_topArea);
-    _range = 100;//一页展示多少
+    
     [self drawArea];
     [self drawDotLine];
 }
@@ -67,7 +67,6 @@
     for (int i = 0; i < ycount; i ++) {
         CGFloat sy = (i + 1) * lineSpace;
         CGFloat ey = sy;
-        
         CGContextMoveToPoint(context, lineSX, sy);
         CGContextAddLineToPoint(context, lineEX, ey);
         CGContextSetStrokeColorWithColor(context, lineColor.CGColor);
@@ -77,16 +76,16 @@
 
 - (void)drawDotLine {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    double dotSpace = CGRectGetWidth(_topArea)/_range;
-    CGPoint linePoints[_range];
-    NSInteger startIndex = self.dataSource.count - _range;
-    for (NSInteger i = startIndex; i < self.dataSource.count; i++) {
+    double dotSpace = CGRectGetWidth(_topArea)/self.KChart.range;
+    CGPoint linePoints[self.KChart.range];
+    for (NSInteger i = self.KChart.rangeFrom; i < self.KChart.rangeTo; i++) {
         QTKChartModel *model = self.dataSource[i];
-        CGPoint point = CGPointMake(_topArea.origin.x + (i - startIndex) * dotSpace, _topArea.origin.y + (_maxPrice - model.closePrice.doubleValue)/_yRatio);
-        linePoints[i] = point;
+        CGPoint point = CGPointMake(_topArea.origin.x + (i - self.KChart.rangeFrom) * dotSpace,
+                                    _topArea.origin.y + (_maxPrice - model.closePrice.doubleValue)/_yRatio);
+        linePoints[i-self.KChart.rangeFrom] = point;
     }
     CGContextBeginPath(context);
-    CGContextAddLines(context, linePoints, _range);
+    CGContextAddLines(context, linePoints, self.KChart.range);
     CGContextSetLineJoin(context, kCGLineJoinRound);
     CGContextSetLineWidth(context, 1.0);
     CGContextSetStrokeColorWithColor(context, [UIColor orangeColor].CGColor);

@@ -19,11 +19,15 @@
 - (void)drawRect:(CGRect)rect {
     if (!_paintbrush) {
         _paintbrush = [QTKChartPaintbrush new];
-        self.range = 100;
+        self.range = 50;
         self.rangeTo = self.dataSource.count;
         self.rangeFrom = self.dataSource.count - self.range;
     }
     [_paintbrush paintInChart:self];
+}
+
+- (void)reDisplay {
+    [self setNeedsDisplay];
 }
 
 @end

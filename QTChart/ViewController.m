@@ -12,6 +12,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) QTKChart *KChart;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedCtrl;
 @end
 
 @implementation ViewController
@@ -20,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.KChart = [[QTKChart alloc] initWithFrame:CGRectMake(20, 20, self.view.frame.size.width-40, 300)];
+    self.KChart.chartLineStyle = QTKChartLineStyleColumnChart;
     NSArray *array = [QTKChartModel kLineDatas];
     self.KChart.dataSource = array;
     [self.view addSubview:self.KChart];
@@ -32,7 +34,15 @@
 }
 
 - (IBAction)disp:(id)sender {
-    [self.KChart setNeedsDisplay];
+    [self.KChart reDisplay];
+}
+- (IBAction)didSegmetedCtrl:(UISegmentedControl *)sender {
+    if (sender.selectedSegmentIndex == 0) { //k
+        self.KChart.chartLineStyle = QTKChartLineStyleColumnChart;
+    } else {//dot
+        self.KChart.chartLineStyle = QTKChartLineStyleDotChart;
+    }
+    [self.KChart reDisplay];
 }
 
 @end

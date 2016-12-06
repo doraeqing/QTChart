@@ -21,21 +21,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERR-Wb-gvY">
-                                <rect key="frame" x="0.0" y="635" width="375" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-iy-x0k">
+                                <rect key="frame" x="0.0" y="618" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PvP-6Q-eoA"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="K"/>
+                                    <segment title="Dot"/>
+                                </segments>
                                 <connections>
-                                    <action selector="disp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JrW-d4-aeK"/>
+                                    <action selector="didSegmetedCtrl:" destination="BYZ-38-t0r" eventType="valueChanged" id="tR2-oZ-29O"/>
                                 </connections>
-                            </button>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ERR-Wb-gvY" secondAttribute="bottom" constant="2" id="SKr-tF-IXd"/>
-                            <constraint firstItem="ERR-Wb-gvY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dbb-xe-u9j"/>
-                            <constraint firstAttribute="trailing" secondItem="ERR-Wb-gvY" secondAttribute="trailing" id="nHu-bh-gYL"/>
+                            <constraint firstItem="y4e-iy-x0k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NWl-u6-tMH"/>
+                            <constraint firstAttribute="trailing" secondItem="y4e-iy-x0k" secondAttribute="trailing" id="Tda-Nf-KrH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y4e-iy-x0k" secondAttribute="bottom" constant="5" id="oXh-ZV-Gsf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmentedCtrl" destination="y4e-iy-x0k" id="865-Hi-yWA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

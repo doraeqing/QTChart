@@ -32,7 +32,7 @@
 }
 
 - (void)commonInit {
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor colorWithRed:16/255 green:10/255 blue:25/255 alpha:1.0];
 }
 
 

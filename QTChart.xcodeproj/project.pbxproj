@@ -22,6 +22,9 @@
 		C9DC92F61DF184D600792A59 /* QTChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92F11DF184D600792A59 /* QTChartData.m */; };
 		C9DC92F71DF184D600792A59 /* QTChartPaintbrush.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC92F41DF184D600792A59 /* QTChartPaintbrush.m */; };
 		C9DC92F91DF184E500792A59 /* KChartData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DC92F81DF184E500792A59 /* KChartData.plist */; };
+		C9DC93101DF7EB0C00792A59 /* QTLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC930C1DF7EB0C00792A59 /* QTLineChart.m */; };
+		C9DC93111DF7EB0C00792A59 /* QTLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC930E1DF7EB0C00792A59 /* QTLineChartData.m */; };
+		C9DC93141DF7EB3100792A59 /* QTLineChartPaintbrush.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC93131DF7EB3100792A59 /* QTLineChartPaintbrush.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,13 @@
 		C9DC92F31DF184D600792A59 /* QTChartPaintbrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChartPaintbrush.h; sourceTree = "<group>"; };
 		C9DC92F41DF184D600792A59 /* QTChartPaintbrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChartPaintbrush.m; sourceTree = "<group>"; };
 		C9DC92F81DF184E500792A59 /* KChartData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KChartData.plist; sourceTree = "<group>"; };
+		C9DC930B1DF7EB0C00792A59 /* QTLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTLineChart.h; sourceTree = "<group>"; };
+		C9DC930C1DF7EB0C00792A59 /* QTLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTLineChart.m; sourceTree = "<group>"; };
+		C9DC930D1DF7EB0C00792A59 /* QTLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTLineChartData.h; sourceTree = "<group>"; };
+		C9DC930E1DF7EB0C00792A59 /* QTLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTLineChartData.m; sourceTree = "<group>"; };
+		C9DC930F1DF7EB0C00792A59 /* QTLineChartDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTLineChartDataProtocol.h; sourceTree = "<group>"; };
+		C9DC93121DF7EB3100792A59 /* QTLineChartPaintbrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTLineChartPaintbrush.h; sourceTree = "<group>"; };
+		C9DC93131DF7EB3100792A59 /* QTLineChartPaintbrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTLineChartPaintbrush.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				C9DC92ED1DF184D600792A59 /* QTChartSuper */,
+				C9DC930A1DF7EB0C00792A59 /* QTLine */,
 				C9DC92E11DF1843900792A59 /* QTChartLine */,
 			);
 			name = QTChart;
@@ -177,12 +188,12 @@
 			children = (
 				C9DC92E21DF1849000792A59 /* QTKChart.h */,
 				C9DC92E31DF1849000792A59 /* QTKChart.m */,
-				C9DC92E41DF1849000792A59 /* QTKChartDataProtocol.h */,
-				C9DC92E51DF1849000792A59 /* QTKChartModel.h */,
-				C9DC92E61DF1849000792A59 /* QTKChartModel.m */,
 				C9DC92E71DF1849000792A59 /* QTKChartPaintbrush.h */,
 				C9DC92E81DF1849000792A59 /* QTKChartPaintbrush.m */,
+				C9DC92E51DF1849000792A59 /* QTKChartModel.h */,
+				C9DC92E61DF1849000792A59 /* QTKChartModel.m */,
 				C9DC92F81DF184E500792A59 /* KChartData.plist */,
+				C9DC92E41DF1849000792A59 /* QTKChartDataProtocol.h */,
 			);
 			path = QTChartLine;
 			sourceTree = "<group>";
@@ -192,13 +203,27 @@
 			children = (
 				C9DC92EE1DF184D600792A59 /* QTChart.h */,
 				C9DC92EF1DF184D600792A59 /* QTChart.m */,
+				C9DC92F31DF184D600792A59 /* QTChartPaintbrush.h */,
+				C9DC92F41DF184D600792A59 /* QTChartPaintbrush.m */,
 				C9DC92F01DF184D600792A59 /* QTChartData.h */,
 				C9DC92F11DF184D600792A59 /* QTChartData.m */,
 				C9DC92F21DF184D600792A59 /* QTChartDataProtocol.h */,
-				C9DC92F31DF184D600792A59 /* QTChartPaintbrush.h */,
-				C9DC92F41DF184D600792A59 /* QTChartPaintbrush.m */,
 			);
 			path = QTChartSuper;
+			sourceTree = "<group>";
+		};
+		C9DC930A1DF7EB0C00792A59 /* QTLine */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC930B1DF7EB0C00792A59 /* QTLineChart.h */,
+				C9DC930C1DF7EB0C00792A59 /* QTLineChart.m */,
+				C9DC93121DF7EB3100792A59 /* QTLineChartPaintbrush.h */,
+				C9DC93131DF7EB3100792A59 /* QTLineChartPaintbrush.m */,
+				C9DC930D1DF7EB0C00792A59 /* QTLineChartData.h */,
+				C9DC930E1DF7EB0C00792A59 /* QTLineChartData.m */,
+				C9DC930F1DF7EB0C00792A59 /* QTLineChartDataProtocol.h */,
+			);
+			path = QTLine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,8 +361,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DC929D1DF11DDC00792A59 /* ViewController.m in Sources */,
+				C9DC93141DF7EB3100792A59 /* QTLineChartPaintbrush.m in Sources */,
 				C9DC92F61DF184D600792A59 /* QTChartData.m in Sources */,
+				C9DC93101DF7EB0C00792A59 /* QTLineChart.m in Sources */,
 				C9DC929A1DF11DDC00792A59 /* AppDelegate.m in Sources */,
+				C9DC93111DF7EB0C00792A59 /* QTLineChartData.m in Sources */,
 				C9DC92971DF11DDC00792A59 /* main.m in Sources */,
 				C9DC92EA1DF1849000792A59 /* QTKChartModel.m in Sources */,
 				C9DC92E91DF1849000792A59 /* QTKChart.m in Sources */,

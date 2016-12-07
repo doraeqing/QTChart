@@ -22,13 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-iy-x0k">
-                                <rect key="frame" x="0.0" y="618" width="375" height="45"/>
+                                <rect key="frame" x="15" y="632" width="345" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="PvP-6Q-eoA"/>
+                                    <constraint firstAttribute="height" constant="30" id="PvP-6Q-eoA"/>
                                 </constraints>
                                 <segments>
                                     <segment title="K"/>
                                     <segment title="Dot"/>
+                                    <segment title="折线"/>
                                 </segments>
                                 <connections>
                                     <action selector="didSegmetedCtrl:" destination="BYZ-38-t0r" eventType="valueChanged" id="tR2-oZ-29O"/>
@@ -37,8 +38,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="y4e-iy-x0k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NWl-u6-tMH"/>
-                            <constraint firstAttribute="trailing" secondItem="y4e-iy-x0k" secondAttribute="trailing" id="Tda-Nf-KrH"/>
+                            <constraint firstItem="y4e-iy-x0k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="NWl-u6-tMH"/>
+                            <constraint firstAttribute="trailing" secondItem="y4e-iy-x0k" secondAttribute="trailing" constant="15" id="Tda-Nf-KrH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y4e-iy-x0k" secondAttribute="bottom" constant="5" id="oXh-ZV-Gsf"/>
                         </constraints>
                     </view>

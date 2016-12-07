@@ -56,7 +56,7 @@ CGFloat const kChartReduce = 16.0;
 
 #pragma mark - draw
 - (void)drawArea {
-    UIColor *lineColor = [UIColor colorWithRed:24/255 green:21/255 blue:39/255 alpha:1.0];
+    UIColor *lineColor = [UIColor grayColor];
     //绘制区域
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 0.3);
@@ -75,7 +75,7 @@ CGFloat const kChartReduce = 16.0;
     for (int i = 0; i < ycount; i ++) {
         CGFloat sy = (i + 1) * lineSpace;
         CGFloat ey = sy;
-        CGContextSetLineWidth(context, 0.5);
+        CGContextSetLineWidth(context, 0.3);
         CGContextMoveToPoint(context, lineSX, sy);
         CGContextAddLineToPoint(context, lineEX, ey);
         CGContextSetStrokeColorWithColor(context, lineColor.CGColor);

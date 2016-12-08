@@ -56,16 +56,16 @@ CGFloat const kChartReduce = 16.0;
 
 #pragma mark - draw
 - (void)drawArea {
-    UIColor *lineColor = [UIColor grayColor];
+    UIColor *lineColor = _KChart.lineColor;
     //绘制区域
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetLineWidth(context, 0.3);
+    CGContextSetLineWidth(context, _KChart.arealineWidth);
     CGContextAddRect(context, _topBackGroudArea);
     CGContextSetStrokeColorWithColor(context, lineColor.CGColor);
     CGContextStrokePath(context);
     
     //绘制水平线条
-    NSInteger ycount = 5;
+    NSInteger ycount = _KChart.horizontalLineCount;
     CGFloat areaH = CGRectGetHeight(_topBackGroudArea);
     CGFloat lineSpace = areaH / (ycount + 1);
     
@@ -75,7 +75,7 @@ CGFloat const kChartReduce = 16.0;
     for (int i = 0; i < ycount; i ++) {
         CGFloat sy = (i + 1) * lineSpace;
         CGFloat ey = sy;
-        CGContextSetLineWidth(context, 0.3);
+        CGContextSetLineWidth(context, _KChart.arealineWidth);
         CGContextMoveToPoint(context, lineSX, sy);
         CGContextAddLineToPoint(context, lineEX, ey);
         CGContextSetStrokeColorWithColor(context, lineColor.CGColor);
@@ -95,16 +95,22 @@ CGFloat const kChartReduce = 16.0;
         UIColor *columnColor = nil;
         if (offsetPrice >= 0) { //涨
             columnSY = _topArea.origin.y + (_maxPrice - model.closePrice.doubleValue) / _yRatio;
-            columnColor = [UIColor redColor];
+            columnColor = _KChart.upColor;
         } else {
             columnSY = _topArea.origin.y + (_maxPrice - model.openPrice.doubleValue) / _yRatio;
-            columnColor = [UIColor greenColor];
+            columnColor = _KChart.downColor;
         }
-        //空心柱子
-        CGContextSetStrokeColorWithColor(context, columnColor.CGColor);
-        CGContextSetLineWidth(context, 0.5);
-        CGContextAddRect(context, CGRectMake(columnSX, columnSY, columnW, columnH));
-        CGContextStrokePath(context);
+
+        if (_KChart.columnStyle == QTKChartColumnStyleHollow) { //空心柱子
+            CGContextSetStrokeColorWithColor(context, columnColor.CGColor);
+            CGContextSetLineWidth(context, 0.5);
+            CGContextAddRect(context, CGRectMake(columnSX, columnSY, columnW, columnH));
+            CGContextStrokePath(context);
+        } else { //实心柱子
+            CGContextSetFillColorWithColor(context, columnColor.CGColor);
+            CGContextFillRect(context, CGRectMake(columnSX, columnSY, columnW, columnH));
+            CGContextFillPath(context);
+        }
         //顶部线
         CGContextSetStrokeColorWithColor(context, columnColor.CGColor);
         CGFloat topLineX = columnSX + columnW / 2;
@@ -118,25 +124,25 @@ CGFloat const kChartReduce = 16.0;
         CGFloat bottomEY = _topArea.origin.y + (_maxPrice - model.minPrice.doubleValue) / _yRatio;
         CGContextMoveToPoint(context, bottomX, bottomSY);
         CGContextAddLineToPoint(context, bottomX, bottomEY);
-        
+        CGContextStrokePath(context);
     }
 }
 
 - (void)drawDotLine {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    double dotSpace = CGRectGetWidth(_topArea)/self.KChart.range;
-    CGPoint linePoints[self.KChart.range];
-    for (NSInteger i = self.KChart.rangeFrom; i < self.KChart.rangeTo; i++) {
+    double dotSpace = CGRectGetWidth(_topArea)/_KChart.range;
+    CGPoint linePoints[_KChart.range];
+    for (NSInteger i = _KChart.rangeFrom; i < _KChart.rangeTo; i++) {
         QTKChartModel *model = self.dataSource[i];
-        CGPoint point = CGPointMake(_topArea.origin.x + (i - self.KChart.rangeFrom) * dotSpace,
+        CGPoint point = CGPointMake(_topArea.origin.x + (i - _KChart.rangeFrom) * dotSpace,
                                     _topArea.origin.y + (_maxPrice - model.closePrice.doubleValue)/_yRatio);
-        linePoints[i-self.KChart.rangeFrom] = point;
+        linePoints[i - _KChart.rangeFrom] = point;
     }
     CGContextBeginPath(context);
-    CGContextAddLines(context, linePoints, self.KChart.range);
+    CGContextAddLines(context, linePoints, _KChart.range);
     CGContextSetLineJoin(context, kCGLineJoinRound);
-    CGContextSetLineWidth(context, 1.0);
-    CGContextSetStrokeColorWithColor(context, [UIColor orangeColor].CGColor);
+    CGContextSetLineWidth(context, _KChart.brokenLineWidth);
+    CGContextSetStrokeColorWithColor(context, _KChart.brokenLineColor.CGColor);
     CGContextSetShouldAntialias(context, YES);
     CGContextStrokePath(context);
 }

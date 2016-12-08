@@ -63,7 +63,6 @@
 		C9DC92BC1DF11DDC00792A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9DC92E21DF1849000792A59 /* QTKChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChart.h; sourceTree = "<group>"; };
 		C9DC92E31DF1849000792A59 /* QTKChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChart.m; sourceTree = "<group>"; };
-		C9DC92E41DF1849000792A59 /* QTKChartDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartDataProtocol.h; sourceTree = "<group>"; };
 		C9DC92E51DF1849000792A59 /* QTKChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartModel.h; sourceTree = "<group>"; };
 		C9DC92E61DF1849000792A59 /* QTKChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKChartModel.m; sourceTree = "<group>"; };
 		C9DC92E71DF1849000792A59 /* QTKChartPaintbrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKChartPaintbrush.h; sourceTree = "<group>"; };
@@ -193,7 +192,6 @@
 				C9DC92E51DF1849000792A59 /* QTKChartModel.h */,
 				C9DC92E61DF1849000792A59 /* QTKChartModel.m */,
 				C9DC92F81DF184E500792A59 /* KChartData.plist */,
-				C9DC92E41DF1849000792A59 /* QTKChartDataProtocol.h */,
 			);
 			path = QTChartLine;
 			sourceTree = "<group>";
@@ -520,11 +518,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QTChart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lq9869.chart.QTChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -532,11 +532,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QTChart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lq9869.chart.QTChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

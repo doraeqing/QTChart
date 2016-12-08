@@ -61,7 +61,7 @@
             _lineChart.alpha = 0.0;
             break;
         case 1:
-            self.KChart.chartLineStyle = QTKChartLineStyleDotChart;
+            self.KChart.chartLineStyle = QTKChartLineStyleBrokenChart;
             _lineChart.alpha = 0.0;
             break;
         case 2:

@@ -19,6 +19,45 @@
 
 @implementation QTKChart
 
+#pragma mark - life circle 
+- (instancetype)init {
+    if (self = [super init]) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)commonInit {
+    self.backgroundColor = [UIColor whiteColor];
+    self.clipsToBounds = YES;
+    self.userInteractionEnabled = YES;
+    
+    _horizontalLineCount = 5;
+    _verticalLineCount = 5;
+    _chartLineStyle = QTKChartLineStyleColumnChart;
+    _columnStyle = QTKChartColumnStyleHollow;
+    _upColor = [UIColor redColor];
+    _downColor = [UIColor greenColor];
+    _lineColor = [UIColor grayColor];
+    _arealineWidth = 0.3f;
+    _brokenLineWidth = 0.5f;
+    _brokenLineColor = [UIColor orangeColor];
+}
+
 - (void)drawRect:(CGRect)rect {
     if (!_paintbrush) {
         _paintbrush = [QTKChartPaintbrush new];
@@ -42,8 +81,12 @@
     CGFloat velocity = sender.velocity;//力度
     if (fabs(velocity) < 0.1) return;
     if (scale > 1) { //放大
+        self.rangeFrom += 2;
         self.rangeTo -= 2;
-        self.rangeFrom -= 2;
+        self.range = self.rangeTo - self.rangeFrom;
+        if (self.range <= 50) {
+            self.range = 50;
+        }
     } else { //缩小
         
     }
@@ -54,8 +97,8 @@
     CGPoint translation = [sender translationInView:self];
     CGPoint velocity = [sender velocityInView:self];
     CGFloat interval = fabs(velocity.x) / self.range;
-    if (interval > 4) {
-        interval = 4;
+    if (interval > 3) {
+        interval = 3;
     }
     if (translation.x > 0) { //单指 右移 查看以前数据
         self.rangeFrom -= interval;

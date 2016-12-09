@@ -56,6 +56,9 @@
     _arealineWidth = 0.3f;
     _brokenLineWidth = 0.5f;
     _brokenLineColor = [UIColor orangeColor];
+    _yFont = [UIFont systemFontOfSize:9.0];
+    _yPirceColor = [UIColor grayColor];
+    _yPirceDecimalCount = 2;
 }
 
 - (void)drawRect:(CGRect)rect {

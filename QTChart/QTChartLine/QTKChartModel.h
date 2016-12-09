@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "QTKChartDataProtocol.h"
 #import "QTChartData.h"
 
 @interface QTKChartModel : QTChartData

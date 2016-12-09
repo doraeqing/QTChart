@@ -53,18 +53,20 @@ CGFloat const kRectReduce = 8.0;
         CGPoint point = CGPointMake(circleX, circleY);
         linePoints[i - _lineChart.rangeFrom] = point;
         
-        CGContextAddArc(context, circleX, circleY, 4, 0, 2 * M_PI, 0);
-        CGContextSetLineWidth(context, 1);
-        CGContextSetStrokeColorWithColor(context, [UIColor greenColor].CGColor);
-        CGContextStrokePath(context);
+//        CGContextAddArc(context, circleX, circleY, 4, 0, 2 * M_PI, 0);
+//        CGContextSetLineWidth(context, 1);
+//        CGContextSetStrokeColorWithColor(context, [UIColor greenColor].CGColor);
+//        CGContextStrokePath(context);
         
     }
-    CGContextSetStrokeColorWithColor(context, [UIColor orangeColor].CGColor);
-    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context, [UIColor colorWithRed:255/225 green:182/255 blue:193/255 alpha:1.0].CGColor);
+    CGContextSetLineWidth(context, 5.0);
     CGContextSetLineJoin(context, kCGLineJoinRound);
     CGContextSetAlpha(context, 0.7);
     CGContextAddLines(context, linePoints, _lineChart.range);
     CGContextStrokePath(context);
+    
+    
 }
 
 @end

@@ -15,6 +15,31 @@
 
 @implementation QTLineChart
 
+- (instancetype)init {
+    if (self = [super init]) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)commonInit {
+    self.backgroundColor = [UIColor colorWithRed:225/255 green:1 blue:1 alpha:1];
+}
+
 - (void)drawRect:(CGRect)rect {
     if (!_lineChartPaintbrush) {
         _lineChartPaintbrush = [QTLineChartPaintbrush new];

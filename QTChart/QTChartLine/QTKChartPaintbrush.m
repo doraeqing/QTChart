@@ -15,7 +15,7 @@ CGFloat const kChartReduce = 16.0;
 @interface QTKChartPaintbrush ()
 {
     double _maxPrice, _minPirce, _yRatio;
-    CGRect _topArea, _topBackGroudArea;
+    CGRect _topArea, _topBackGroudArea, _topRightArea;
 }
 
 @property (nonatomic, strong) QTKChart *KChart;
@@ -38,12 +38,18 @@ CGFloat const kChartReduce = 16.0;
     }
     _topBackGroudArea = CGRectMake(0,
                                    0,
-                                   CGRectGetWidth(self.KChart.frame),
+                                   CGRectGetWidth(_KChart.frame) - 44 - 4,
                                    CGRectGetHeight(self.KChart.frame));
     _topArea = CGRectMake(0,
                           kChartReduce,
-                          CGRectGetWidth(self.KChart.frame),
-                          CGRectGetHeight(self.KChart.frame) - 2 * kChartReduce);
+                          CGRectGetWidth(_KChart.frame) - 44 - 4,
+                          CGRectGetHeight(_KChart.frame) - 2 * kChartReduce);
+    
+    _topRightArea = CGRectMake(CGRectGetMaxX(_topBackGroudArea) + 4,
+                               _topBackGroudArea.origin.y,
+                               44,
+                               CGRectGetHeight(_topBackGroudArea));
+    
     _yRatio = (_maxPrice - _minPirce) / CGRectGetHeight(_topArea);
     //开始绘制
     [self drawArea];
@@ -60,27 +66,61 @@ CGFloat const kChartReduce = 16.0;
     //绘制区域
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, _KChart.arealineWidth);
-    CGContextAddRect(context, _topBackGroudArea);
     CGContextSetStrokeColorWithColor(context, lineColor.CGColor);
+    CGContextAddRect(context, _topBackGroudArea);
     CGContextStrokePath(context);
     
-    //绘制水平线条
-    NSInteger ycount = _KChart.horizontalLineCount;
+    //绘制水平线条和右边区域价格
+    NSInteger horizontalCount = _KChart.horizontalLineCount;
     CGFloat areaH = CGRectGetHeight(_topBackGroudArea);
-    CGFloat lineSpace = areaH / (ycount + 1);
-    
+    CGFloat horizontalLineSpace = areaH / (horizontalCount + 1);
     CGFloat lineSX = _topBackGroudArea.origin.x; //线条开始X
     CGFloat lineEX = CGRectGetMaxX(_topBackGroudArea);
-    
-    for (int i = 0; i < ycount; i ++) {
-        CGFloat sy = (i + 1) * lineSpace;
+    //计算最底部缩减后的实际价格
+    NSString *priceFormat = [NSString stringWithFormat:@"%%0.%@f",@(_KChart.yPirceDecimalCount)];
+    CGFloat realPirce = _minPirce - _yRatio * kChartReduce;
+    NSDictionary *priceAttr = @{NSFontAttributeName:_KChart.yFont,
+                                NSForegroundColorAttributeName:_KChart.yPirceColor};
+    for (int i = 0; i < horizontalCount; i ++) {
+        CGFloat sy = (i + 1) * horizontalLineSpace;
         CGFloat ey = sy;
+        CGContextSetStrokeColorWithColor(context, lineColor.CGColor);
         CGContextSetLineWidth(context, _KChart.arealineWidth);
         CGContextMoveToPoint(context, lineSX, sy);
         CGContextAddLineToPoint(context, lineEX, ey);
+        CGContextStrokePath(context);
+        //价格
+        CGFloat price = realPirce + horizontalLineSpace * (i+1) * _yRatio;
+        NSString *priceStr = [NSString stringWithFormat:priceFormat,price];
+        CGSize priceStrSize = [priceStr sizeWithAttributes:priceAttr];
+        CGFloat priceX = CGRectGetMinX(_topRightArea);
+        CGRect priceRect = CGRectMake(priceX + 2, sy-priceStrSize.height/2, priceStrSize.width, priceStrSize.height);
+        [priceStr drawWithRect:priceRect
+                       options:NSStringDrawingUsesLineFragmentOrigin
+                    attributes:priceAttr
+                       context:nil];
+    }
+    //绘制垂直线
+    NSInteger verticalCount = _KChart.verticalLineCount;
+    CGFloat verticalLineSpace = CGRectGetWidth(_topBackGroudArea) / (verticalCount + 1);
+    CGFloat vLineSY = _topBackGroudArea.origin.y;
+    CGFloat vLineEY = CGRectGetMaxY(_topBackGroudArea);
+    
+    for (int i = 0; i < verticalCount; i++) {
+        CGFloat vLineSX = (i + 1) * verticalLineSpace;
+        CGFloat vLineEX = vLineSX;
         CGContextSetStrokeColorWithColor(context, lineColor.CGColor);
+        CGContextSetLineWidth(context, _KChart.arealineWidth);
+        CGContextMoveToPoint(context, vLineSX, vLineSY);
+        CGContextAddLineToPoint(context, vLineEX, vLineEY);
         CGContextStrokePath(context);
     }
+    //绘制右上区域
+    CGContextBeginPath(context);
+    CGContextSetLineWidth(context, _KChart.arealineWidth);
+    CGContextSetStrokeColorWithColor(context, lineColor.CGColor);;
+    CGContextAddRect(context, _topRightArea);
+    CGContextStrokePath(context);
 }
 
 - (void)drawColumnChart {

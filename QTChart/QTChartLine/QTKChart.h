@@ -38,6 +38,11 @@ typedef NS_ENUM(NSUInteger, QTKChartColumnStyle) {
 @property (nonatomic) QTKChartColumnStyle columnStyle;
 ///竖屏或者横屏 默认是竖屏
 @property (nonatomic) QTKChartLayoutStyle layoutStyle;
+///topLeft绘制区域
+@property (nonatomic) CGRect topLeftArea;
+@property (nonatomic) UIEdgeInsets topLeftDrawInset;
+///topRight绘制区域
+@property (nonatomic) CGRect topRightArea;
 
 ///水平线条个数
 @property (nonatomic)IBInspectable NSInteger horizontalLineCount;
@@ -54,6 +59,13 @@ typedef NS_ENUM(NSUInteger, QTKChartColumnStyle) {
 ///broken line width
 @property (nonatomic, assign)IBInspectable CGFloat brokenLineWidth;
 @property (nonatomic, strong)IBInspectable UIColor *brokenLineColor;
+
+///y轴价格字体
+@property (nonatomic, strong) UIFont *yFont;
+///y轴价格颜色
+@property (nonatomic, strong) UIColor *yPirceColor;
+///y轴 价格小数点位置
+@property (nonatomic) NSInteger yPirceDecimalCount;
 
 ///重绘
 - (void)reDisplay;
